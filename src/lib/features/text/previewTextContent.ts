@@ -1,6 +1,6 @@
-const previewTextCodes = `# Welcome to my React Markdown Previewer!
+const previewTextCodes = `# Welcome to my Next.Js Markdown Previewer!
 
-![freeCodeCamp Logo](https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg)
+![Next.js Logo](https://raw.githubusercontent.com/cemcelikgh/markdown_previewer/39940f2baaf1645e10f8db4c9d2552149f7c99dc/public/assets/nextjs-logotype-light-background.svg)
 
 ### This line is a heading...
 

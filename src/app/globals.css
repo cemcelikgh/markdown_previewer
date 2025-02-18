@@ -12,23 +12,26 @@
   margin: 0;
 }
 
-html {
-  width: 100vw;
-  background-color: var(--color-thre);
+html,
+body {
+  max-width: 100vw;
   overflow-x: hidden;
 }
 
 body {
-  max-width: 830px;
-  margin: 10px auto;
-  padding: 10px;
   line-height: 1.5rem;
+  background-color: var(--color-thre);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+main {
+  max-width: 830px;
+  min-width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+}
 
 #editor-section {
   margin: 0 auto;
@@ -40,7 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid black;
-  background-color: 	var(--color-four)
+  background-color: var(--color-four)
 }
 
 .top-bar-left {

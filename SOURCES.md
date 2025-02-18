@@ -25,15 +25,18 @@ HTML to React parser
 <br>Feb 2025
 <br><https://github.com/remarkablemark/html-react-parser#readme>
 
-fontawesome/
-<br>display-solid.svg
+display-solid.svg
 <br>Feb 2025
+<br><https://fontawesome.com/search>
+
+fontawesome/
+<br>Jul 2024
 <br><https://fontawesome.com/v6/download>
 
 Preview content
-<br>Feb 2025
+<br>Jul 2024
 <br><https://markdown-previewer.freecodecamp.rocks/>
 
 Next.js logo
 <br>Feb 2025
-<br><https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg>
+<br><https://vercel.com/geist/brands>

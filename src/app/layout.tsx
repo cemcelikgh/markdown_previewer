@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import '../../public/assets/fontawesome/css/fontawesome.min.css';
+import '../../public/assets/fontawesome/css/regular.min.css';
+import '../../public/assets/fontawesome/css/solid.min.css';
 import ReduxProvider from "./ReduxProvider";
 
 export const metadata: Metadata = {
   title: "Markdown Previewer",
   icons: {
-    icon: 'display-solid.svg'
+    icon: '/display-solid.svg'
   }
 }
 
@@ -17,11 +20,6 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-    <head>
-      <link rel="stylesheet" href="/fontawesome/css/fontawesome.min.css" />
-      <link rel="stylesheet" href="/fontawesome/css/regular.min.css" />
-      <link rel="stylesheet" href="/fontawesome/css/solid.min.css" />
-    </head>
     <body>
       <ReduxProvider>
         {children}

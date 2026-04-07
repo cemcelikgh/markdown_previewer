@@ -5,7 +5,7 @@ export const displaySlice = createSlice({
   name: 'display',
   initialState: {
     editor: true,
-    previewer: true
+    previewer: true,
   },
   reducers: {
     toggleEditorDisplay: (state, action: PayloadAction<boolean>) => {
@@ -13,12 +13,10 @@ export const displaySlice = createSlice({
     },
     togglePreviewerDisplay: (state, action: PayloadAction<boolean>) => {
       state.previewer = action.payload;
-    }
-  }
-})
+    },
+  },
+});
 
 export const { toggleEditorDisplay, togglePreviewerDisplay } = displaySlice.actions;
-
 export const selectDisplay = (state: RootState) => state.display;
-
 export default displaySlice.reducer;

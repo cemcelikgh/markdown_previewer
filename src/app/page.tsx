@@ -1,13 +1,13 @@
 'use client';
 
 import Editor from "@/components/Editor";
-import Preview from "@/components/preview";
-import { useSelector } from "react-redux";
+import Previewer from "@/components/previewer/Previewer";
+import { useAppSelector } from "@/lib/hooks/hooks";
 import { selectDisplay } from "@/lib/features/displaySlice";
 
-export default function Home() {
+function Home() {
 
-  const display = useSelector(selectDisplay);
+  const display = useAppSelector(selectDisplay);
 
   return (
     <main>
@@ -16,9 +16,12 @@ export default function Home() {
         : null
       }
       {display.previewer === true
-        ? <Preview />
+        ? <Previewer />
         : null
       }
     </main>
   );
+
 }
+
+export default Home;

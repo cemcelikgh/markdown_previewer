@@ -1,14 +1,14 @@
-#preview {
+#previewer {
   margin: 1rem;
 }
 
-#preview img {
+#previewer img {
   display: block;
   max-width: 95%;
   margin: 2rem auto;
 }
 
-#preview h1 {
+#previewer h1 {
   border-bottom: 2px solid var(--color-five);
   font-size: 2rem;
   line-height: 3.25rem;
@@ -16,7 +16,7 @@
   margin-bottom: 1rem;
 }
 
-#preview h2 {
+#previewer h2 {
   border-bottom: 1px solid var(--color-five);
   font-size: 1.5rem;
   line-height: 2.25rem;
@@ -24,7 +24,7 @@
   margin-bottom: 1rem;
 }
 
-#preview h3 {
+#previewer h3 {
   line-height: 2.25rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -35,11 +35,11 @@ p {
   margin-bottom: 1rem;
 }
 
-#preview > p > code {
+#previewer > p > code {
   padding: 3px;
 }
 
-#preview pre {
+#previewer pre {
   display: block;
   overflow: auto;
   background: var(--colour-one);
@@ -47,32 +47,32 @@ p {
   line-height: 1.2;
 }
 
-#preview code {
+#previewer code {
   background: var(--colour-one);
   font-size: 0.875rem;
   font-weight: bold;
 }
 
-#preview blockquote {
+#previewer blockquote {
   border-left: 3px solid var(--color-five);
   color: var(--color-five);
   padding-left: 5px;
   margin-left: 25px;
 }
 
-#preview blockquote > p {
+#previewer blockquote > p {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-#preview table {
+#previewer table {
   border-collapse: collapse;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-#preview td,
-#preview th {
+#previewer td,
+#previewer th {
   border: 2px solid var(--color-five);
   padding-left: 5px;
   padding-right: 5px;

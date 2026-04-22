@@ -4,11 +4,10 @@ import { Provider } from 'react-redux';
 import { store } from '../lib/store';
 
 function ReduxProvider({
-  children
+  children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
-
   return (
     <Provider store={store}>
       {children}

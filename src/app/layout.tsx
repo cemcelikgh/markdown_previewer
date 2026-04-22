@@ -8,16 +8,15 @@ import ReduxProvider from "./ReduxProvider";
 export const metadata: Metadata = {
   title: "Markdown Previewer",
   icons: {
-    icon: '/display-solid.svg'
-  }
-}
+    icon: '/display-solid.svg',
+  },
+};
 
-export default function RootLayout({
-  children
+function RootLayout({
+  children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
     <body>
@@ -28,3 +27,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+export default RootLayout;

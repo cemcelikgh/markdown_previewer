@@ -1,6 +1,6 @@
-const previewTextCodes = `# Welcome to my Next.Js Markdown Previewer!
+const editorInitialTextMarkdown = `# Welcome to Markdown Previewer!
 
-![Next.js Logo](https://raw.githubusercontent.com/cemcelikgh/markdown_previewer/39940f2baaf1645e10f8db4c9d2552149f7c99dc/public/assets/nextjs-logotype-light-background.svg)
+![TypeScript Logo](https://raw.githubusercontent.com/cemcelikgh/markdown_previewer/ab96809844a78b300a0d556d3e417a14ee7a74a4/public/assets/images/ts-lettermark-blue.svg)
 
 ### This line is a heading...
 
@@ -44,4 +44,4 @@ And here. | Okay. | I think we get it.
 1. And last
 `;
 
-export default previewTextCodes;
+export default editorInitialTextMarkdown;

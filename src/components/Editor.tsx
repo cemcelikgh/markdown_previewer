@@ -4,35 +4,32 @@ import { selectDisplay, togglePreviewerDisplay }
   from "@/lib/features/displaySlice";
 import { selectText, setText } from "@/lib/features/text/textSlice";
 import { useState, ChangeEvent } from "react";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks/hooks";
 
 function Editor() {
 
-  const display = useSelector(selectDisplay);
+  const dispatch = useAppDispatch();
+  const text = useAppSelector(selectText);
+  const display = useAppSelector(selectDisplay);
   const [size, setSize] = useState({
     icon: 'fa-expand',
-    area: undefined as undefined | { minHeight: string }
+    area: undefined as undefined | { minHeight: string },
   });
-  const dispatch = useDispatch();
-  const text = useSelector(selectText);
 
   function handleToggle () {
     if (display.previewer === true) {
       setSize({
-        ...size,
         icon: 'fa-compress',
-        area: { minHeight: '90vh' }
+        area: { minHeight: '90vh' },
       });
       dispatch(togglePreviewerDisplay(false));
     } else {
       setSize({
-        ...size,
         icon: 'fa-expand',
-        area: undefined
+        area: undefined,
       });
       dispatch(togglePreviewerDisplay(true));
-    }
+    };
   };
 
   function handleChange(event: ChangeEvent<HTMLTextAreaElement>) {
@@ -56,6 +53,7 @@ function Editor() {
       ></textarea>
     </section>
   );
-};
+
+}
 
 export default Editor;

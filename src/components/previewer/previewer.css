@@ -1,0 +1,84 @@
+#previewer {
+  margin: 16px;
+}
+
+#previewer img {
+  display: block;
+  max-width: 95%;
+  margin: 32px auto;
+}
+
+#previewer h1 {
+  border-bottom: 2px solid #083359;
+  font-size: 32px;
+  line-height: 52px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#previewer h2 {
+  border-bottom: 1px solid #083359;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#previewer h3 {
+  line-height: 36px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#previewer > p > code {
+  padding: 3px;
+}
+
+#previewer pre {
+  display: block;
+  overflow: auto;
+  background: #edf2F4;
+  padding: 5px;
+  line-height: 1.2;
+}
+
+#previewer code {
+  background: #edf2F4;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#previewer blockquote {
+  border-left: 3px solid #083359;
+  color: #083359;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+#previewer blockquote > p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#previewer table {
+  border-collapse: collapse;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#previewer td,
+#previewer th {
+  border: 2px solid #083359;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+ul, ol {
+  margin-left: 16px;
+  padding-left: 40px;
+}

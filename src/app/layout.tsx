@@ -1,30 +1,31 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import '../../public/assets/fontawesome/css/fontawesome.min.css';
-import '../../public/assets/fontawesome/css/regular.min.css';
-import '../../public/assets/fontawesome/css/solid.min.css';
-import ReduxProvider from "./ReduxProvider";
+import StoreProvider from "./StoreProvider";
 
 export const metadata: Metadata = {
   title: "Markdown Previewer",
-  icons: {
-    icon: '/display-solid.svg'
-  }
-}
+  description: "Patika Intermediate Frontend Web Development Path Certification Task",
+};
 
-export default function RootLayout({
-  children
+function RootLayout({
+  children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
-    <body>
-      <ReduxProvider>
+      <head>
+        <link rel="stylesheet" href="/fonts/fontawesome/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="/fonts/fontawesome/css/regular.min.css" />
+        <link rel="stylesheet" href="/fonts/fontawesome/css/solid.min.css" />
+      </head>
+      <body>
+      <StoreProvider>
         {children}
-      </ReduxProvider>
-    </body>
+      </StoreProvider>
+      </body>
     </html>
   );
 }
+
+export default RootLayout;

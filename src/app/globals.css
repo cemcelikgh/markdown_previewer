@@ -1,15 +1,11 @@
-:root {
-  --colour-one: #EDF2F4;
-  --colour-two: #8fb8dc;
-  --color-thre: #5190c8;
-  --color-four: #126ebf;
-  --color-five: #083359;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  scrollbar-color: #126ebf #5190c8;
 }
 
 html,
@@ -19,8 +15,8 @@ body {
 }
 
 body {
-  line-height: 1.5rem;
-  background-color: var(--color-thre);
+  line-height: 24px;
+  background-color: #5190c8;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,15 +31,15 @@ main {
 
 #editor-section {
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 .top-bar {
   padding: 8px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
-  background-color: var(--color-four)
+  border-bottom: 1px solid #000000;
+  background-color: #126ebf
 }
 
 .top-bar-left {
@@ -61,7 +57,7 @@ i {
 .fa-keyboard::after {
   content: ' Editor';
   font-family: sans-serif;
-  font-size: 1.2rem;
+  font-size: 19.2px;
   font-weight: 600;
 }
 
@@ -73,21 +69,21 @@ textarea {
   outline: none;
   padding: 5px;
   font-family: monospace;
-  font-size: 1rem;
-  background-color: var(--colour-two);
+  font-size: 16px;
+  background-color: #8fb8dc;
 }
 
-#preview-section {
+#previewer-section {
   margin: 10px auto 0;
   min-height: calc(100vh - 350px);
   overflow-wrap: break-word;
-  background-color: var(--colour-two);
-  border: 1px solid black;
+  background-color: #8fb8dc;
+  border: 1px solid #000000;
 }
 
 .fa-display::after {
-  content: ' Preview';
+  content: ' Previewer';
   font-family: sans-serif;
-  font-size: 1.2rem;
+  font-size: 19.2px;
   font-weight: 600;
 }

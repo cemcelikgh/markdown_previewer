@@ -41,11 +41,12 @@ function Previewer() {
     <section id="previewer-section">
       <div className='top-bar'>
         <div className='top-bar-left'>
-          <i className="fa-solid fa-display"></i>
+          <i className="fa-solid fa-display" />
         </div>
-        <i className={`fa-solid ${icon}`}
+        <i
+          className={`fa-solid ${icon}`}
           onClick={handleToggle}
-        ></i>
+        />
       </div>
       <div id="previewer">
         {element}

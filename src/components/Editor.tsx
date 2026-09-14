@@ -41,17 +41,19 @@ function Editor() {
     <section id="editor-section">
       <div className='top-bar'>
         <div className='top-bar-left'>
-          <i className="fa-regular fa-keyboard"></i>
+          <i className="fa-regular fa-keyboard" />
         </div>
-        <i className={`fa-solid ${size.icon}`}
+        <i
+          className={`fa-solid ${size.icon}`}
           onClick={handleToggle}
-        ></i>
+        />
       </div>
-      <textarea id="editor"
+      <textarea
+        id="editor"
         style={size.area}
         value={text}
         onChange={handleChange}
-      ></textarea>
+      />
     </section>
   );
 

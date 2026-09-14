@@ -11,14 +11,10 @@ function Home() {
 
   return (
     <main>
-      {display.editor === true
-        ? <Editor />
-        : null
-      }
-      {display.previewer === true
-        ? <Previewer />
-        : null
-      }
+      {display.editor &&
+      <Editor />}
+      {display.previewer &&
+      <Previewer />}
     </main>
   );
 

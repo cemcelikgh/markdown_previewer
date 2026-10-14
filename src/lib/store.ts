@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import textReducer from './features/textSlice/textSlice';
 import displayReducer from './features/displaySlice';
+import textReducer from './features/textSlice';
 
 export const makeStore = () => {
   return configureStore({

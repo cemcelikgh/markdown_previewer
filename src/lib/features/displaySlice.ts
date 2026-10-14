@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import type { RootState } from '../store';
+import { RootState } from '../store';
 
 export const displaySlice = createSlice({
   name: 'display',
@@ -17,6 +17,11 @@ export const displaySlice = createSlice({
   },
 });
 
-export const { toggleEditorDisplay, togglePreviewerDisplay } = displaySlice.actions;
+export const {
+  toggleEditorDisplay,
+  togglePreviewerDisplay,
+} = displaySlice.actions;
+
 export const selectDisplay = (state: RootState) => state.display;
+
 export default displaySlice.reducer;

@@ -1,24 +1,24 @@
 'use client';
 
-import './previewer.css'
+import { Element } from '@/types/types';
+import { marked } from 'marked';
 import { selectDisplay, toggleEditorDisplay }
   from '@/lib/features/displaySlice';
-import { selectText } from '@/lib/features/textSlice/textSlice';
-import { useEffect, useState } from 'react';
+import { selectText } from '@/lib/features/textSlice';
 import { useAppDispatch, useAppSelector } from '@/lib/hooks';
-import { marked } from 'marked';
+import { useEffect, useState } from 'react';
 import parse from 'html-react-parser';
-import { Element } from '@/types/types';
+import './previewer.css';
 
 marked.use( { breaks: true, gfm: true } );
 
 function Previewer() {
 
-  const dispatch = useAppDispatch();
-  const text = useAppSelector(selectText);
-  const display = useAppSelector(selectDisplay);
-  const [icon, setIcon] = useState('fa-expand');
   const [element, setElement] = useState<Element | null>(null);
+  const [icon, setIcon] = useState('fa-expand');
+  const display = useAppSelector(selectDisplay);
+  const text = useAppSelector(selectText);
+  const dispatch = useAppDispatch();
 
   function handleToggle () {
     if (display.editor === true) {
@@ -41,11 +41,12 @@ function Previewer() {
     <section id="previewer-section">
       <div className='top-bar'>
         <div className='top-bar-left'>
-          <i className="fa-solid fa-display"></i>
+          <i className="fa-solid fa-display" />
         </div>
-        <i className={`fa-solid ${icon}`}
+        <i
+          className={`fa-solid ${icon}`}
           onClick={handleToggle}
-        ></i>
+        />
       </div>
       <div id="previewer">
         {element}

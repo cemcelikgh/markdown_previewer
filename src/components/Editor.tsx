@@ -2,20 +2,20 @@
 
 import { selectDisplay, togglePreviewerDisplay }
   from "@/lib/features/displaySlice";
-import { selectText, setText } from "@/lib/features/textSlice/textSlice";
+import { selectText, setText } from "@/lib/features/textSlice";
+import { Size } from '@/types/types';
 import { useState, ChangeEvent } from "react";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
-import { Size } from '@/types/types';
 
 function Editor() {
 
-  const dispatch = useAppDispatch();
   const text = useAppSelector(selectText);
   const display = useAppSelector(selectDisplay);
   const [size, setSize] = useState<Size>({
     icon: 'fa-expand',
     area: undefined,
   });
+  const dispatch = useAppDispatch();
 
   function handleToggle () {
     if (display.previewer === true) {
@@ -41,17 +41,19 @@ function Editor() {
     <section id="editor-section">
       <div className='top-bar'>
         <div className='top-bar-left'>
-          <i className="fa-regular fa-keyboard"></i>
+          <i className="fa-regular fa-keyboard" />
         </div>
-        <i className={`fa-solid ${size.icon}`}
+        <i
+          className={`fa-solid ${size.icon}`}
           onClick={handleToggle}
-        ></i>
+        />
       </div>
-      <textarea id="editor"
+      <textarea
+        id="editor"
         style={size.area}
         value={text}
         onChange={handleChange}
-      ></textarea>
+      />
     </section>
   );
 

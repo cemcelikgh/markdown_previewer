@@ -1,7 +1,6 @@
 next
 <br>react
 <br>react-dom
-<br>react-scripts
 <br>May 2026
 <br><https://nextjs.org/docs/app/getting-started/installation>
 
@@ -32,10 +31,6 @@ icon.svg
 fontawesome/
 <br>Jul 2024
 <br><https://fontawesome.com/v6/download>
-
-Previewer's initial content
-<br>Jul 2024
-<br><https://markdown-previewer.freecodecamp.rocks/>
 
 ts-lettermark-blue.svg
 <br>May 2026

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import StoreProvider from "./StoreProvider";
+import "../../public/fonts/fontawesome/css/fontawesome.min.css";
+import "../../public/fonts/fontawesome/css/regular.min.css";
+import "../../public/fonts/fontawesome/css/solid.min.css";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Markdown Previewer",
@@ -14,15 +17,10 @@ function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="stylesheet" href="/fonts/fontawesome/css/fontawesome.min.css" />
-        <link rel="stylesheet" href="/fonts/fontawesome/css/regular.min.css" />
-        <link rel="stylesheet" href="/fonts/fontawesome/css/solid.min.css" />
-      </head>
       <body>
-      <StoreProvider>
-        {children}
-      </StoreProvider>
+        <StoreProvider>
+          {children}
+        </StoreProvider>
       </body>
     </html>
   );

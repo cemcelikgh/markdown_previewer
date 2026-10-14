@@ -1,9 +1,9 @@
 'use client';
 
+import { selectDisplay } from "@/lib/features/displaySlice";
+import { useAppSelector } from "@/lib/hooks";
 import Editor from "@/components/Editor";
 import Previewer from "@/components/previewer/Previewer";
-import { useAppSelector } from "@/lib/hooks";
-import { selectDisplay } from "@/lib/features/displaySlice";
 
 function Home() {
 
@@ -11,14 +11,10 @@ function Home() {
 
   return (
     <main>
-      {display.editor === true
-        ? <Editor />
-        : null
-      }
-      {display.previewer === true
-        ? <Previewer />
-        : null
-      }
+      {display.editor &&
+      <Editor />}
+      {display.previewer &&
+      <Previewer />}
     </main>
   );
 
